@@ -3,5 +3,7 @@ jQuery(function () {
         return;
     }
 
-    window.location.href = window.location.href + 'iconSize?24x24';
+    if (jQuery('a[href="/iconSize?24x24"]').length) {
+        window.location.href = '/iconSize?24x24';
+    }
 });
